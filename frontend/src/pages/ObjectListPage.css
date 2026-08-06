@@ -1,0 +1,39 @@
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.toolbar-actions .input {
+  max-width: 200px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-border) 25%,
+    var(--color-bg) 37%,
+    var(--color-border) 63%
+  );
+  background-size: 400% 100%;
+  border-radius: 10px;
+  animation: shimmer 1.6s ease-in-out infinite;
+  border: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

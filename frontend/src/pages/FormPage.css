@@ -1,0 +1,11 @@
+.form-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 600px;
+}
+
+.form-page h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
