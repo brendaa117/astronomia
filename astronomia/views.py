@@ -64,5 +64,6 @@ class CatalogoTipoObjetoViewSet(viewsets.ViewSet):
             ObjetoAstronomico.TIPO_CHOICES
         ]
         return Response(tipos)
+        return Response(tipos)
 
     
