@@ -5,7 +5,6 @@ from .views import (ObjetoAstronomicoViewSet,
                     CatalogoTipoObjetoViewSet,
                     EstadisticasAPIView
 )
-from .views import ObjetoAstronomicoViewSet, EstadisticasAPIView
 
 router = DefaultRouter()
 
@@ -25,4 +24,3 @@ EstadisticasAPIView.as_view(),name='statistics'),
 
     path('', include (router.urls)),
 ]
-

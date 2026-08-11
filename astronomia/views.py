@@ -49,7 +49,6 @@ class EstadisticasAPIView(APIView):
                 "cometas": cometas,
                 "asteroides": asteroides
             })
-            })
 #sin estar directamente a un modelo como model view este permite agrupar acciones
 class CatalogoTipoObjetoViewSet(viewsets.ViewSet):
 
@@ -64,6 +63,3 @@ class CatalogoTipoObjetoViewSet(viewsets.ViewSet):
             ObjetoAstronomico.TIPO_CHOICES
         ]
         return Response(tipos)
-        return Response(tipos)
-
-    
