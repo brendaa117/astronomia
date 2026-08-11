@@ -6,12 +6,15 @@ from .models import ObjetoAstronomico
 from .serializers import ObjetoAstronomicoSerializer
 from django_filters.rest_framework import DjangoFilterBackend
 
+#modelviews set sirve para tener predeterminadas acciones de un crud
 #modelviews set sirve para tener predeterminadas las acciones de un crud
 class ObjetoAstronomicoViewSet(viewsets.ModelViewSet):
 
     queryset = ObjetoAstronomico.objects.all()
     serializer_class = ObjetoAstronomicoSerializer
 
+# procesa https, sirve para aplicar filtros de autenticacion antes 
+# de ejecutar codigo pos aca juan este nomas cuenta los registros y a cuales tipos pertenecen y obtiene todos los obkjetos de BD
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['tipo', 'constelacion',]
 
@@ -45,6 +48,7 @@ class EstadisticasAPIView(APIView):
                 "nebulosas": nebulosas,
                 "cometas": cometas,
                 "asteroides": asteroides
+            })
             })
 #sin estar directamente a un modelo como model view este permite agrupar acciones
 class CatalogoTipoObjetoViewSet(viewsets.ViewSet):
