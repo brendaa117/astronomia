@@ -18,7 +18,6 @@ class ObjetoAstronomicoViewSet(viewsets.ModelViewSet):
 
     queryset = ObjetoAstronomico.objects.all()
     serializer_class = ObjetoAstronomicoSerializer
-
 # procesa https, sirve para aplicar filtros de autenticacion antes 
 # de ejecutar codigo pos aca juan este nomas cuenta los registros y a cuales tipos pertenecen y obtiene todos los obkjetos de BD
     filter_backends = [DjangoFilterBackend]
